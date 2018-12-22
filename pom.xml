@@ -25,15 +25,15 @@
 
         <!-- Core Versions -->
         <!-- Java - We will change to Java 8 for minimum requirement when Mojang does. -->
-        <massiveJavaVersion>1.7</massiveJavaVersion>
+        <massiveJavaVersion>10</massiveJavaVersion>
         <!-- Maven - As of writing the version bundled with latest IntelliJ. -->
         <massiveMavenVersion>3.0.5</massiveMavenVersion>
 
         <!-- Maven Plugin Properties -->
-        <massiveMavenEnforcerPluginVersion>1.4.1</massiveMavenEnforcerPluginVersion>
-        <massiveMavenCompilerPluginVersion>3.7.0</massiveMavenCompilerPluginVersion>
-        <massiveMavenJarPluginVersion>3.0.2</massiveMavenJarPluginVersion>
-        <massiveMavenShadePluginVersion>3.1.0</massiveMavenShadePluginVersion>
+        <massiveMavenEnforcerPluginVersion>3.0.0-M2</massiveMavenEnforcerPluginVersion>
+        <massiveMavenCompilerPluginVersion>3.8.0</massiveMavenCompilerPluginVersion>
+        <massiveMavenJarPluginVersion>3.1.1</massiveMavenJarPluginVersion>
+        <massiveMavenShadePluginVersion>3.2.1</massiveMavenShadePluginVersion>
         <massiveMavenProGuardPluginVersion>2.0.14</massiveMavenProGuardPluginVersion>
         <massiveMavenProGuardVersion>5.3.3</massiveMavenProGuardVersion>
 
@@ -48,8 +48,8 @@
         <massiveHttpclientVersion>4.5.3</massiveHttpclientVersion>
 
         <!-- https://hub.spigotmc.org/nexus/content/groups/public/org/spigotmc/spigot-api/ -->
-        <massiveSpigotVersion>1.12-R0.1-SNAPSHOT</massiveSpigotVersion>
-        <massivePaperVersion>1.12-R0.1-SNAPSHOT</massivePaperVersion>
+        <massiveSpigotVersion>1.13.2-R0.1-SNAPSHOT</massiveSpigotVersion>
+        <massivePaperVersion>1.13.2-R0.1-SNAPSHOT</massivePaperVersion>
 
         <!-- https://oss.sonatype.org/content/repositories/snapshots/net/md-5/bungeecord-api/ -->
         <massiveBungeeCordApiVersion>1.12-SNAPSHOT</massiveBungeeCordApiVersion>
@@ -60,10 +60,10 @@
         <!-- http://maven.sk89q.com/repo/com/sk89q/worldedit/worldedit-bukkit/ -->
         <!-- The artifact in their repository was not properly shaded -->
         <!-- The solution for now is to download and install manually -->
-        <massiveWorldEditVersion>6.1.5-TEMPFIX</massiveWorldEditVersion>
+        <massiveWorldEditVersion>7.0.0-SNAPSHOT</massiveWorldEditVersion>
 
         <!-- http://maven.sk89q.com/repo/com/sk89q/worldguard/worldguard-legacy/ -->
-        <massiveWorldGuardVersion>6.2</massiveWorldGuardVersion>
+        <massiveWorldGuardVersion>7.0.0-SNAPSHOT</massiveWorldGuardVersion>
 
         <!-- http://repo.dmulloy2.net/content/repositories/public/com/comphenix/protocol/ProtocolLib/ -->
         <massiveProtocolLibVersion>4.3.0</massiveProtocolLibVersion>
@@ -123,7 +123,7 @@
         <massiveAntiCheatPlusVersion>2.1.4</massiveAntiCheatPlusVersion>
 
         <!-- https://www.spigotmc.org/resources/lwc-unofficial-entity-locking.2162/ -->
-        <massiveLwcVersion>1.8.2</massiveLwcVersion>
+        <massiveLwcVersion>2.1.1</massiveLwcVersion>
 
     </properties>
 
@@ -352,11 +352,23 @@
             -->
             <dependency>
                 <groupId>com.sk89q.worldedit</groupId>
+                <artifactId>worldedit-core</artifactId>
+                <version>${massiveWorldEditVersion}</version>
+                <scope>provided</scope>
+            </dependency>
+            <dependency>
+                <groupId>com.sk89q.worldedit</groupId>
                 <artifactId>worldedit-bukkit</artifactId>
                 <version>${massiveWorldEditVersion}</version>
                 <scope>provided</scope>
             </dependency>
 
+            <dependency>
+                <groupId>com.sk89q.worldguard</groupId>
+                <artifactId>worldguard-core</artifactId>
+                <version>${massiveWorldGuardVersion}</version>
+                <scope>provided</scope>
+            </dependency>
             <dependency>
                 <groupId>com.sk89q.worldguard</groupId>
                 <artifactId>worldguard-legacy</artifactId>
@@ -1039,5 +1051,5 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
-    
+
 </project>
