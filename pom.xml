@@ -24,10 +24,9 @@
         <massiveDescriptionSuffix>${massiveColorBold}Cayorion${massiveColorInfo} from ${massiveColorBold}MassiveCraft${massiveColorInfo} is the developer. Feel free to visit us at ${massiveColorLink}${massiveBaseUrl}</massiveDescriptionSuffix>
 
         <!-- Core Versions -->
-        <!-- Java - We will change to Java 8 for minimum requirement when Mojang does. -->
         <massiveJavaVersion>10</massiveJavaVersion>
         <!-- Maven - As of writing the version bundled with latest IntelliJ. -->
-        <massiveMavenVersion>3.0.5</massiveMavenVersion>
+        <massiveMavenVersion>3.6.0</massiveMavenVersion>
 
         <!-- Maven Plugin Properties -->
         <massiveMavenEnforcerPluginVersion>3.0.0-M2</massiveMavenEnforcerPluginVersion>
