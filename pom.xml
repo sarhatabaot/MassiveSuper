@@ -21,7 +21,7 @@
         <massiveColorBold>${massiveColorSign}a</massiveColorBold>
         <massiveColorLink>${massiveColorSign}b</massiveColorLink>
         <massiveBaseUrl>https://www.muj.dk</massiveBaseUrl>
-        <massiveDescriptionSuffix>${massiveColorBold}Cayorion${massiveColorInfo} from ${massiveColorBold}MassiveCraft${massiveColorInfo} is the developer. Feel free to visit us at ${massiveColorLink}${massiveBaseUrl}</massiveDescriptionSuffix>
+        <massiveDescriptionSuffix></massiveDescriptionSuffix>
 
         <!-- Core Versions -->
         <massiveJavaVersion>10</massiveJavaVersion>
