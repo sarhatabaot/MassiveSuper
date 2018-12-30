@@ -67,59 +67,18 @@
         <!-- http://repo.dmulloy2.net/content/repositories/public/com/comphenix/protocol/ProtocolLib/ -->
         <massiveProtocolLibVersion>4.3.0</massiveProtocolLibVersion>
 
-        <!-- http://repo.md-5.net/content/groups/public/LibsDisguises/LibsDisguises/ -->
-        <massiveLibsDisguisesVersion>9.5.1</massiveLibsDisguisesVersion>
-
-        <!-- http://repo.mikeprimm.com/us/dynmap/dynmap/ -->
-        <massiveDynmapVersion>2.5</massiveDynmapVersion>
-
-        <!-- http://repo.md-5.net/content/groups/public/fr/neatmonster/nocheatplus/ -->
-        <massiveNoCheatPlusVersion>3.15.1-RC</massiveNoCheatPlusVersion>
-
-        <!-- http://minebuilders.me:8080/plugin/repository/everything/uk/co/oliwali/HawkEye/ -->
-        <massiveHawkEyeVersion>1.7.2</massiveHawkEyeVersion>
-
-        <!-- http://repo.citizensnpcs.co/net/citizensnpcs/citizens/ -->
-        <massiveCitizensVersion>2.0.22-SNAPSHOT</massiveCitizensVersion>
-
         <!-- http://repo.howaner.de/com/vexsoftware/votifier/ -->
         <massiveVotifierVersion>1.9</massiveVotifierVersion>
 
         <!-- ~~~~~~~~~~~~~~~ -->
         <!-- Custom Versions -->
         <!-- ~~~~~~~~~~~~~~~ -->
-        <!-- https://dev.bukkit.org/projects/herochat/files -->
-        <massiveHerochatVersion>5.6.7-SNAPSHOT</massiveHerochatVersion>
-
-        <!-- https://dev.bukkit.org/projects/worldborder/files -->
-        <massiveWorldBorderVersion>1.8.7</massiveWorldBorderVersion>
 
         <!-- https://www.spigotmc.org/resources/mcmmo.2445/ -->
         <massiveMcmmoVersion>1.5.10</massiveMcmmoVersion>
 
-        <!-- https://dev.bukkit.org/projects/holographic-displays/files -->
-        <massiveHolographicDisplaysVersion>2.2.6</massiveHolographicDisplaysVersion>
-
-        <!-- https://dev.bukkit.org/projects/sit-and-lie-anywhere/files -->
-        <massiveMorePlayerModelsVersion>1.10.2</massiveMorePlayerModelsVersion>
-
         <!-- https://www.spigotmc.org/resources/wgregionevents-continued.15946/ -->
         <massiveWGRegionEventsVersion>2.1.0</massiveWGRegionEventsVersion>
-
-        <!-- https://www.spigotmc.org/resources/king-of-the-hill-efficient-and-customizable-1-7-and-1-8-only.6832/ -->
-        <massiveKothVersion>1.11</massiveKothVersion>
-
-        <!-- dead -->
-        <massiveParticlePackVersion>3.3</massiveParticlePackVersion>
-
-        <!-- http://ci.athion.net/job/PlotSquared/ -->
-        <massivePlotSquaredVersion>3.5.1-SNAPSHOT-3633576</massivePlotSquaredVersion>
-
-        <!-- https://www.spigotmc.org/resources/aac-advanced-anti-cheat-hack-kill-aura-blocker.6442/ -->
-        <massiveAacVersion>3.2.2</massiveAacVersion>
-
-        <!-- https://dev.bukkit.org/projects/anticheatplus/files -->
-        <massiveAntiCheatPlusVersion>2.1.4</massiveAntiCheatPlusVersion>
 
         <!-- https://www.spigotmc.org/resources/lwc-unofficial-entity-locking.2162/ -->
         <massiveLwcVersion>2.1.1</massiveLwcVersion>
@@ -144,11 +103,6 @@
             <id>bungeecord-repo</id>
             <url>https://oss.sonatype.org/content/repositories/snapshots</url>
         </repository>
-        <!-- LibsDisguises and NoCheatPlus -->
-        <repository>
-            <id>md-5-repo</id>
-            <url>http://repo.md-5.net/content/groups/public/</url>
-        </repository>
         <!-- Vault -->
         <repository>
             <id>vault-repo</id>
@@ -168,17 +122,6 @@
         <repository>
             <id>dynmap-repo</id>
             <url>http://repo.mikeprimm.com/</url>
-        </repository>
-        <!-- HawkEye -->
-        <!-- https://github.com/bob7l/HawkReloaded -->
-        <repository>
-            <id>minebuilders-repo</id>
-            <url>http://minebuilders.me:8080/plugin/repository/everything/</url>
-        </repository>
-        <!-- Citizens -->
-        <repository>
-            <id>citizens-repo</id>
-            <url>http://repo.citizensnpcs.co</url>
         </repository>
         <!-- Votifier -->
         <repository>
@@ -332,12 +275,6 @@
                 <scope>provided</scope>
             </dependency>
             <dependency>
-                <groupId>net.md-5</groupId>
-                <artifactId>bungeecord-api</artifactId>
-                <version>${massiveBungeeCordApiVersion}</version>
-                <scope>provided</scope>
-            </dependency>
-            <dependency>
                 <groupId>net.milkbowl.vault</groupId>
                 <artifactId>Vault</artifactId>
                 <version>${massiveVaultVersion}</version>
@@ -381,36 +318,6 @@
                 <scope>provided</scope>
             </dependency>
             <dependency>
-                <groupId>LibsDisguises</groupId>
-                <artifactId>LibsDisguises</artifactId>
-                <version>${massiveLibsDisguisesVersion}</version>
-                <scope>provided</scope>
-            </dependency>
-            <dependency>
-                <groupId>us.dynmap</groupId>
-                <artifactId>dynmap</artifactId>
-                <version>${massiveDynmapVersion}</version>
-                <scope>provided</scope>
-            </dependency>
-            <dependency>
-                <groupId>fr.neatmonster</groupId>
-                <artifactId>nocheatplus</artifactId>
-                <version>${massiveNoCheatPlusVersion}</version>
-                <scope>provided</scope>
-            </dependency>
-            <dependency>
-                <groupId>uk.co.oliwali</groupId>
-                <artifactId>HawkEye</artifactId>
-                <version>${massiveHawkEyeVersion}</version>
-                <scope>provided</scope>
-            </dependency>
-            <dependency>
-                <groupId>net.citizensnpcs</groupId>
-                <artifactId>citizens</artifactId>
-                <version>${massiveCitizensVersion}</version>
-                <scope>provided</scope>
-            </dependency>
-            <dependency>
                 <groupId>com.vexsoftware</groupId>
                 <artifactId>votifier</artifactId>
                 <version>${massiveVotifierVersion}</version>
@@ -427,149 +334,6 @@
                 You won't need most of these dependencies installed.
                 Most are used in closed source MassiveCraft plugins.
             -->
-
-            <!--
-                Page: https://dev.bukkit.org/projects/herochat/files
-                File: https://dev.bukkit.org/projects/herochat/files/726673
-                Intall: mvn install:install-file -DgroupId=com.dthielke.herochat -DartifactId=Herochat -Dversion=5.6.7-SNAPSHOT -Dpackaging=jar -Dfile=HeroChat.jar
-                Test: mvn dependency:get -Dartifact=com.dthielke.herochat:Herochat:5.6.7-SNAPSHOT
-            -->
-            <dependency>
-                <groupId>com.dthielke.herochat</groupId>
-                <artifactId>Herochat</artifactId>
-                <version>${massiveHerochatVersion}</version>
-                <scope>provided</scope>
-            </dependency>
-
-            <!--
-                Page: https://dev.bukkit.org/projects/worldborder/files
-                File: https://dev.bukkit.org/projects/worldborder/files/2415838
-                Intall: mvn install:install-file -DgroupId=com.wimbli.WorldBorder -DartifactId=WorldBorder -Dversion=1.8.7 -Dpackaging=jar -Dfile=WorldBorder.jar
-                Test: mvn dependency:get -Dartifact=com.wimbli.WorldBorder:WorldBorder:1.8.7
-            -->
-            <dependency>
-                <groupId>com.wimbli.WorldBorder</groupId>
-                <artifactId>WorldBorder</artifactId>
-                <version>${massiveWorldBorderVersion}</version>
-                <scope>provided</scope>
-            </dependency>
-
-            <!--
-                Page: https://www.spigotmc.org/resources/mcmmo.2445/
-                File: https://www.spigotmc.org/resources/mcmmo.2445/update?update=170741
-                Intall: mvn install:install-file -DgroupId=com.gmail.nossr50.mcMMO -DartifactId=mcMMO -Dversion=1.5.08 -Dpackaging=jar -Dfile=mcMMO.jar
-                Test: mvn dependency:get -Dartifact=com.gmail.nossr50.mcMMO:mcMMO:1.5.08
-            -->
-            <dependency>
-                <groupId>com.gmail.nossr50.mcMMO</groupId>
-                <artifactId>mcMMO</artifactId>
-                <version>${massiveMcmmoVersion}</version>
-                <scope>provided</scope>
-            </dependency>
-
-            <!--
-                Page: https://dev.bukkit.org/projects/holographic-displays/files
-                File: https://dev.bukkit.org/projects/holographic-displays/files/2430907
-                Intall: mvn install:install-file -DgroupId=com.gmail.filoghost.holographicdisplays -DartifactId=HolographicDisplays -Dversion=2.2.6 -Dpackaging=jar -Dfile=HolographicDisplays.jar
-                Test: mvn dependency:get -Dartifact=com.gmail.filoghost.holographicdisplays:HolographicDisplays:2.2.6
-            -->
-            <dependency>
-                <groupId>com.gmail.filoghost.holographicdisplays</groupId>
-                <artifactId>HolographicDisplays</artifactId>
-                <version>${massiveHolographicDisplaysVersion}</version>
-                <scope>provided</scope>
-            </dependency>
-
-            <!--
-                Page: https://dev.bukkit.org/projects/sit-and-lie-anywhere/files
-                File: https://dev.bukkit.org/projects/sit-and-lie-anywhere/files/949934
-                Intall: mvn install:install-file -DgroupId=noppes.mpm -DartifactId=MorePlayerModels -Dversion=1.10.2 -Dpackaging=jar -Dfile=MorePlayerModels_1.10.2.jar
-                Test: mvn dependency:get -Dartifact=noppes.mpm:MorePlayerModels:1.10.2
-            -->
-            <dependency>
-                <groupId>noppes.mpm</groupId>
-                <artifactId>MorePlayerModels</artifactId>
-                <version>${massiveMorePlayerModelsVersion}</version>
-                <scope>provided</scope>
-            </dependency>
-
-            <!--
-                Page: https://www.spigotmc.org/resources/wgregionevents-continued.15946/history
-                File: https://www.spigotmc.org/resources/wgregionevents-continued.15946/download?version=59697
-                Intall: mvn install:install-file -DgroupId=com.mewin -DartifactId=WGRegionEvents -Dversion=2.1.0 -Dpackaging=jar -Dfile=WGRegionEvents.jar
-                Test: mvn dependency:get -Dartifact=com.mewin:WGRegionEvents:2.1.0
-            -->
-            <dependency>
-                <groupId>com.mewin</groupId>
-                <artifactId>WGRegionEvents</artifactId>
-                <version>${massiveWGRegionEventsVersion}</version>
-                <scope>provided</scope>
-            </dependency>
-
-            <!--
-                Page: https://www.spigotmc.org/resources/king-of-the-hill-efficient-and-customizable-1-7-and-1-8-only.6832/updates
-                File: https://www.spigotmc.org/resources/king-of-the-hill-efficient-and-customizable-1-7-and-1-8-only.6832/update?update=170269
-                Intall: mvn install:install-file -DgroupId=com.benzimmer123.koth -DartifactId=KOTH -Dversion=6.2.0 -Dpackaging=jar -Dfile=KOTH.jar
-                Test: mvn dependency:get -Dartifact=com.benzimmer123.koth:KOTH:6.2.0
-            -->
-            <dependency>
-                <groupId>com.benzimmer123.koth</groupId>
-                <artifactId>KOTH</artifactId>
-                <version>${massiveKothVersion}</version>
-                <scope>provided</scope>
-            </dependency>
-
-            <!--
-                Page: https://www.spigotmc.org/resources/particlepack.760/history
-                File: https://www.spigotmc.org/resources/particlepack.760/download?version=96067
-                Intall: mvn install:install-file -DgroupId=com.particlepack -DartifactId=ParticlePack -Dversion=3.3 -Dpackaging=jar -Dfile=ParticlePack.jar
-                Test: mvn dependency:get -Dartifact=com.particlepack:ParticlePack:3.3
-            -->
-            <dependency>
-                <groupId>com.particlepack</groupId>
-                <artifactId>ParticlePack</artifactId>
-                <version>${massiveParticlePackVersion}</version>
-                <scope>provided</scope>
-            </dependency>
-
-            <!--
-                Page: http://ci.athion.net/job/PlotSquared/
-                File: http://ci.athion.net/job/PlotSquared/491/
-                Intall: mvn install:install-file -DgroupId=com.plotsquared.bukkit -DartifactId=PlotSquared -Dversion=3.5.1-SNAPSHOT-3633576 -Dpackaging=jar -Dfile=PlotSquared.jar
-                Test: mvn dependency:get -Dartifact=com.plotsquared.bukkit:PlotSquared:3.5.1-SNAPSHOT-3633576
-            -->
-            <dependency>
-                <groupId>com.plotsquared.bukkit</groupId>
-                <artifactId>PlotSquared</artifactId>
-                <version>${massivePlotSquaredVersion}</version>
-                <scope>provided</scope>
-            </dependency>
-
-            <!--
-                Page: https://www.spigotmc.org/resources/aac-advanced-anti-cheat-hack-kill-aura-blocker.6442/history
-                File: https://www.spigotmc.org/resources/aac-advanced-anti-cheat-hack-kill-aura-blocker.6442/update?update=175190
-                Intall: mvn install:install-file -DgroupId=me.konsolas.aac -DartifactId=AAC -Dversion=3.2.2 -Dpackaging=jar -Dfile=AAC.jar
-                Test: mvn dependency:get -Dartifact=me.konsolas.aac:AAC:3.2.2
-            -->
-            <dependency>
-                <groupId>me.konsolas.aac</groupId>
-                <artifactId>AAC</artifactId>
-                <version>${massiveAacVersion}</version>
-                <scope>provided</scope>
-            </dependency>
-
-            <!--
-                Page: https://www.spigotmc.org/resources/anticheatplus.2714/history
-                File: https://www.spigotmc.org/resources/anticheatplus.2714/download?version=9961
-                Intall: mvn install:install-file -DgroupId=net.dynamicdev.anticheat -DartifactId=AntiCheatPlus -Dversion=2.1.4 -Dpackaging=jar -Dfile=AntiCheatPlus.jar
-                Test: mvn dependency:get -Dartifact=net.dynamicdev.anticheat:AntiCheatPlus:2.1.4
-            -->
-            <dependency>
-                <groupId>net.dynamicdev.anticheat</groupId>
-                <artifactId>AntiCheatPlus</artifactId>
-                <version>${massiveAntiCheatPlusVersion}</version>
-                <scope>provided</scope>
-            </dependency>
 
             <!--
                 Page: https://www.spigotmc.org/resources/lwc-unofficial-entity-locking.2162/history
@@ -759,24 +523,6 @@
                 <scope>provided</scope>
             </dependency>
 
-            <!-- PerWorldPlugins - Section similar to the one above. -->
-            <!--
-                mvn install:install-file -DgroupId=me.incomprehendable.dev.pwp -DartifactId=125 -Dversion=1.2.5 -Dpackaging=jar -Dfile=pwp-125.jar
-                mvn install:install-file -DgroupId=me.incomprehendable.dev.pwp -DartifactId=124 -Dversion=1.2.4 -Dpackaging=jar -Dfile=pwp-124.jar
-            -->
-            <dependency>
-                <groupId>me.incomprehendable.dev.pwp</groupId>
-                <artifactId>125</artifactId>
-                <version>1.2.5</version>
-                <scope>provided</scope>
-            </dependency>
-            <dependency>
-                <groupId>me.incomprehendable.dev.pwp</groupId>
-                <artifactId>124</artifactId>
-                <version>1.2.4</version>
-                <scope>provided</scope>
-            </dependency>
-
             <!-- Internal - Stuff made by MassiveCraft. -->
             <dependency>
                 <groupId>com.massivecraft.creativegates</groupId>
@@ -791,260 +537,14 @@
                 <scope>provided</scope>
             </dependency>
             <dependency>
-                <groupId>com.massivecraft.factionsdynmap</groupId>
-                <artifactId>FactionsDynmap</artifactId>
-                <version>${project.version}</version>
-                <scope>provided</scope>
-            </dependency>
-            <dependency>
-                <groupId>com.massivecraft.factionstax</groupId>
-                <artifactId>FactionsTax</artifactId>
-                <version>${project.version}</version>
-                <scope>provided</scope>
-            </dependency>
-            <dependency>
-                <groupId>com.massivecraft.massiveannounce</groupId>
-                <artifactId>MassiveAnnounce</artifactId>
-                <version>${project.version}</version>
-                <scope>provided</scope>
-            </dependency>
-            <dependency>
-                <groupId>com.massivecraft.massivebasic</groupId>
-                <artifactId>MassiveBasic</artifactId>
-                <version>${project.version}</version>
-                <scope>provided</scope>
-            </dependency>
-            <dependency>
-                <groupId>com.massivecraft.massivebiomes</groupId>
-                <artifactId>MassiveBiomes</artifactId>
-                <version>${project.version}</version>
-                <scope>provided</scope>
-            </dependency>
-            <dependency>
-                <groupId>com.massivecraft.massivebooks</groupId>
-                <artifactId>MassiveBooks</artifactId>
-                <version>${project.version}</version>
-                <scope>provided</scope>
-            </dependency>
-            <dependency>
-                <groupId>com.massivecraft.massivebungee</groupId>
-                <artifactId>MassiveBungee</artifactId>
-                <version>${project.version}</version>
-                <scope>provided</scope>
-            </dependency>
-            <dependency>
-                <groupId>com.massivecraft.massivechar</groupId>
-                <artifactId>MassiveChar</artifactId>
-                <version>${project.version}</version>
-                <scope>provided</scope>
-            </dependency>
-            <dependency>
-                <groupId>com.massivecraft.massivechat</groupId>
-                <artifactId>MassiveChat</artifactId>
-                <version>${project.version}</version>
-                <scope>provided</scope>
-            </dependency>
-            <dependency>
-                <groupId>com.massivecraft.massivecombat</groupId>
-                <artifactId>MassiveCombat</artifactId>
-                <version>${project.version}</version>
-                <scope>provided</scope>
-            </dependency>
-            <dependency>
                 <groupId>com.massivecraft.massivecore</groupId>
                 <artifactId>MassiveCore</artifactId>
                 <version>${project.version}</version>
                 <scope>provided</scope>
             </dependency>
             <dependency>
-                <groupId>com.massivecraft.massivecore</groupId>
-                <artifactId>MassiveCoreXlib</artifactId>
-                <version>${project.version}</version>
-                <scope>compile</scope>
-            </dependency>
-            <dependency>
-                <groupId>com.massivecraft.massivecore</groupId>
-                <artifactId>MassiveCoreXlibGuava</artifactId>
-                <version>${project.version}</version>
-                <scope>compile</scope>
-            </dependency>
-            <dependency>
-                <groupId>com.massivecraft.massivedisguises</groupId>
-                <artifactId>MassiveDisguises</artifactId>
-                <version>${project.version}</version>
-                <scope>provided</scope>
-            </dependency>
-            <dependency>
-                <groupId>com.massivecraft.massivefx</groupId>
-                <artifactId>MassiveFx</artifactId>
-                <version>${project.version}</version>
-                <scope>provided</scope>
-            </dependency>
-            <dependency>
-                <groupId>com.massivecraft.massivegates</groupId>
-                <artifactId>MassiveGates</artifactId>
-                <version>${project.version}</version>
-                <scope>provided</scope>
-            </dependency>
-            <dependency>
-                <groupId>com.massivecraft.massivehat</groupId>
-                <artifactId>MassiveHat</artifactId>
-                <version>${project.version}</version>
-                <scope>provided</scope>
-            </dependency>
-            <dependency>
-                <groupId>com.massivecraft.massiveinhouse</groupId>
-                <artifactId>MassiveInhouse</artifactId>
-                <version>${project.version}</version>
-                <scope>provided</scope>
-            </dependency>
-            <dependency>
-                <groupId>com.massivecraft.massiveintstat</groupId>
-                <artifactId>MassiveIntStat</artifactId>
-                <version>${project.version}</version>
-                <scope>provided</scope>
-            </dependency>
-            <dependency>
-                <groupId>com.massivecraft.massivelag</groupId>
-                <artifactId>MassiveLag</artifactId>
-                <version>${project.version}</version>
-                <scope>provided</scope>
-            </dependency>
-            <dependency>
-                <groupId>com.massivecraft.massivelagagent</groupId>
-                <artifactId>MassiveLagAgent</artifactId>
-                <version>${project.version}</version>
-                <scope>provided</scope>
-            </dependency>
-            <dependency>
-                <groupId>com.massivecraft.massivelight</groupId>
-                <artifactId>MassiveLight</artifactId>
-                <version>${project.version}</version>
-                <scope>provided</scope>
-            </dependency>
-            <dependency>
-                <groupId>com.massivecraft.massivelock</groupId>
-                <artifactId>MassiveLock</artifactId>
-                <version>${project.version}</version>
-                <scope>provided</scope>
-            </dependency>
-            <dependency>
-                <groupId>com.massivecraft.massivemagic</groupId>
-                <artifactId>MassiveMagic</artifactId>
-                <version>${project.version}</version>
-                <scope>provided</scope>
-            </dependency>
-            <dependency>
-                <groupId>com.massivecraft.massivemeta</groupId>
-                <artifactId>MassiveMeta</artifactId>
-                <version>${project.version}</version>
-                <scope>provided</scope>
-            </dependency>
-            <dependency>
-                <groupId>com.massivecraft.massivemobs</groupId>
-                <artifactId>MassiveMobs</artifactId>
-                <version>${project.version}</version>
-                <scope>provided</scope>
-            </dependency>
-            <dependency>
-                <groupId>com.massivecraft.massivemoney</groupId>
-                <artifactId>MassiveMoney</artifactId>
-                <version>${project.version}</version>
-                <scope>provided</scope>
-            </dependency>
-            <dependency>
-                <groupId>com.massivecraft.massiveperms</groupId>
-                <artifactId>MassivePerms</artifactId>
-                <version>${project.version}</version>
-                <scope>provided</scope>
-            </dependency>
-            <dependency>
-                <groupId>com.massivecraft.massivequest</groupId>
-                <artifactId>MassiveQuest</artifactId>
-                <version>${project.version}</version>
-                <scope>provided</scope>
-            </dependency>
-            <dependency>
-                <groupId>com.massivecraft.massiverestore</groupId>
-                <artifactId>MassiveRestore</artifactId>
-                <version>${project.version}</version>
-                <scope>provided</scope>
-            </dependency>
-            <dependency>
-                <groupId>com.massivecraft.massivesharding</groupId>
-                <artifactId>MassiveSharding</artifactId>
-                <version>${project.version}</version>
-                <scope>provided</scope>
-            </dependency>
-            <dependency>
-                <groupId>com.massivecraft.massiveshop</groupId>
-                <artifactId>MassiveShop</artifactId>
-                <version>${project.version}</version>
-                <scope>provided</scope>
-            </dependency>
-            <dependency>
-                <groupId>com.massivecraft.massivesigns</groupId>
-                <artifactId>MassiveSigns</artifactId>
-                <version>${project.version}</version>
-                <scope>provided</scope>
-            </dependency>
-            <dependency>
-                <groupId>com.massivecraft.massivesnow</groupId>
-                <artifactId>MassiveSnow</artifactId>
-                <version>${project.version}</version>
-                <scope>provided</scope>
-            </dependency>
-            <dependency>
                 <groupId>com.massivecraft.massivesuper</groupId>
                 <artifactId>MassiveSuper</artifactId>
-                <version>${project.version}</version>
-                <scope>provided</scope>
-            </dependency>
-            <dependency>
-                <groupId>com.massivecraft.massivesupertest</groupId>
-                <artifactId>MassiveSuperTest</artifactId>
-                <version>${project.version}</version>
-                <scope>provided</scope>
-            </dependency>
-            <dependency>
-                <groupId>com.massivecraft.massivetagapi</groupId>
-                <artifactId>MassiveTagApi</artifactId>
-                <version>${project.version}</version>
-                <scope>provided</scope>
-            </dependency>
-            <dependency>
-                <groupId>com.massivecraft.massivetickets</groupId>
-                <artifactId>MassiveTickets</artifactId>
-                <version>${project.version}</version>
-                <scope>provided</scope>
-            </dependency>
-            <dependency>
-                <groupId>com.massivecraft.massivetraits</groupId>
-                <artifactId>MassiveTraits</artifactId>
-                <version>${project.version}</version>
-                <scope>provided</scope>
-            </dependency>
-            <dependency>
-                <groupId>com.massivecraft.massivevanilla</groupId>
-                <artifactId>MassiveVanilla</artifactId>
-                <version>${project.version}</version>
-                <scope>provided</scope>
-            </dependency>
-            <dependency>
-                <groupId>com.massivecraft.massivevote</groupId>
-                <artifactId>MassiveVote</artifactId>
-                <version>${project.version}</version>
-                <scope>provided</scope>
-            </dependency>
-            <dependency>
-                <groupId>com.massivecraft.vampire</groupId>
-                <artifactId>Vampire</artifactId>
-                <version>${project.version}</version>
-                <scope>provided</scope>
-            </dependency>
-            <dependency>
-                <groupId>com.massivecraft.wess</groupId>
-                <artifactId>wess</artifactId>
                 <version>${project.version}</version>
                 <scope>provided</scope>
             </dependency>
