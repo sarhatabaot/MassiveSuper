@@ -56,6 +56,9 @@
         <!-- http://nexus.hc.to/content/repositories/pub_releases/net/milkbowl/vault/Vault/ -->
         <massiveVaultVersion>1.5.6</massiveVaultVersion>
 
+        <!-- https://github.com/lucko/commodore -->
+        <massiveCommodoreVersion>1.2</massiveCommodoreVersion>
+
         <!-- http://maven.sk89q.com/repo/com/sk89q/worldedit/worldedit-bukkit/ -->
         <!-- The artifact in their repository was not properly shaded -->
         <!-- The solution for now is to download and install manually -->
@@ -127,6 +130,11 @@
         <repository>
             <id>howaner-repo</id>
             <url>http://repo.howaner.de/</url>
+        </repository>
+        <!-- Commodore/Brigadier -->
+        <repository>
+          <id>luck-repo</id>
+          <url>https://repo.lucko.me/</url>
         </repository>
     </repositories>
 
@@ -280,6 +288,14 @@
                 <version>${massiveVaultVersion}</version>
                 <scope>provided</scope>
             </dependency>
+
+            <dependency>
+              <groupId>me.lucko</groupId>
+              <artifactId>commodore</artifactId>
+              <version>${massiveCommodoreVersion}</version>
+              <scope>provided</scope>
+            </dependency>
+
             <!--
                 Page: https://dev.bukkit.org/projects/worldedit/files
                 File: https://dev.bukkit.org/projects/worldedit/files/956525
