@@ -24,7 +24,7 @@
         <massiveDescriptionSuffix></massiveDescriptionSuffix>
 
         <!-- Core Versions -->
-        <massiveJavaVersion>10</massiveJavaVersion>
+        <massiveJavaVersion>1.8</massiveJavaVersion>
         <!-- Maven - As of writing the version bundled with latest IntelliJ. -->
         <massiveMavenVersion>3.6.0</massiveMavenVersion>
 
