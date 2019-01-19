@@ -86,6 +86,8 @@
         <!-- https://www.spigotmc.org/resources/lwc-unofficial-entity-locking.2162/ -->
         <massiveLwcVersion>2.1.1</massiveLwcVersion>
 
+        <!-- https://www.spigotmc.org/wiki/hooking-into-placeholderapi/ -->
+        <massivePlaceholderAPIVersion>2.9.2</massivePlaceholderAPIVersion>
     </properties>
 
     <!-- Repositories -->
@@ -135,6 +137,11 @@
         <repository>
           <id>luck-repo</id>
           <url>https://repo.lucko.me/</url>
+        </repository>
+        <!-- PlaceholderAPI -->
+        <repository>
+            <id>placeholderapi</id>
+            <url>http://repo.extendedclip.com/content/repositories/placeholderapi/</url>
         </repository>
     </repositories>
 
@@ -338,6 +345,13 @@
                 <artifactId>votifier</artifactId>
                 <version>${massiveVotifierVersion}</version>
                 <scope>provided</scope>
+            </dependency>
+
+            <dependency>
+              <groupId>me.clip</groupId>
+              <artifactId>placeholderapi</artifactId>
+              <version>${massivePlaceholderAPIVersion}</version>
+              <scope>provided</scope>
             </dependency>
 
             <!-- Custom - Custom artifacts. Manually installed by command. -->
