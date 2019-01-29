@@ -73,6 +73,9 @@
         <!-- http://repo.howaner.de/com/vexsoftware/votifier/ -->
         <massiveVotifierVersion>1.9</massiveVotifierVersion>
 
+        <!-- https://github.com/kangarko/ChatControl-Pro/wiki/Developer-API -->
+        <massiveMineverseChatVersion>2.14.0</massiveMineverseChatVersion>
+
         <!-- ~~~~~~~~~~~~~~~ -->
         <!-- Custom Versions -->
         <!-- ~~~~~~~~~~~~~~~ -->
@@ -377,6 +380,18 @@
                 <version>${massiveLwcVersion}</version>
                 <scope>provided</scope>
             </dependency>
+
+            <!--
+                Page: https://www.spigotmc.org/resources/venturechat.771/
+                Intall: mvn install:install-file -DgroupId=mineverse.Aust1n46.chat -DartifactId=MineverseChat -Dversion=2.14.0 -Dpackaging=jar -Dfile=VentureChat.jar
+                Test: mvn dependency:get -Dartifact=mineverse.Aust1n46.chat:MineverseChat:2.14.0
+            -->
+            <dependency>
+                <groupId>mineverse.Aust1n46.chat</groupId>
+                <artifactId>MineverseChat</artifactId>
+                <version>${massiveMineverseChatVersion}</version>
+                <scope>provided</scope>
+            </dependency><!-- https://github.com/kangarko/ChatControl-Pro/wiki/Developer-API -->
 
             <!-- NMS - Full Spigot servers including NMS that may not be distributed. -->
             <!-- This section is relevant to supporting multiple minecraft versions for plugins using NMS. -->
