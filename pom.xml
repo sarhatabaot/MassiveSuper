@@ -50,9 +50,6 @@
         <massiveSpigotVersion>1.13.2-R0.1-SNAPSHOT</massiveSpigotVersion>
         <massivePaperVersion>1.13.2-R0.1-SNAPSHOT</massivePaperVersion>
 
-        <!-- https://oss.sonatype.org/content/repositories/snapshots/net/md-5/bungeecord-api/ -->
-        <massiveBungeeCordApiVersion>1.12-SNAPSHOT</massiveBungeeCordApiVersion>
-
         <!-- http://nexus.hc.to/content/repositories/pub_releases/net/milkbowl/vault/Vault/ -->
         <massiveVaultVersion>1.5.6</massiveVaultVersion>
 
@@ -75,6 +72,9 @@
 
         <!-- https://github.com/kangarko/ChatControl-Pro/wiki/Developer-API -->
         <massiveMineverseChatVersion>2.14.0</massiveMineverseChatVersion>
+
+        <!-- http://repo.mikeprimm.com/us/dynmap/dynmap/ -->
+        <massiveDynmapVersion>3.0-SNAPSHOT</massiveDynmapVersion>
 
         <!-- ~~~~~~~~~~~~~~~ -->
         <!-- Custom Versions -->
@@ -105,17 +105,16 @@
             <id>destroystokyo-repo</id>
             <url>https://repo.destroystokyo.com/repository/maven-snapshots/</url>
         </repository>
-        <!-- BungeeCord API -->
-        <!-- https://www.spigotmc.org/threads/bungeecord-maven.60365/ -->
+        <!-- Dynmap -->
         <repository>
-            <id>bungeecord-repo</id>
-            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+            <id>dynmap-repo</id>
+            <url>http://repo.mikeprimm.com/</url>
         </repository>
-        <!-- Vault -->
+        <!-- Vault
         <repository>
             <id>vault-repo</id>
             <url>http://nexus.hc.to/content/repositories/pub_releases</url>
-        </repository>
+        </repository>-->
         <!-- WorldEdit and WorldGuard -->
         <repository>
             <id>sk89q-repo</id>
@@ -125,11 +124,6 @@
         <repository>
             <id>dmulloy2-repo</id>
             <url>http://repo.dmulloy2.net/nexus/repository/public/</url>
-        </repository>
-        <!-- Dynmap -->
-        <repository>
-            <id>dynmap-repo</id>
-            <url>http://repo.mikeprimm.com/</url>
         </repository>
         <!-- Votifier -->
         <repository>
@@ -298,7 +292,6 @@
                 <version>${massiveVaultVersion}</version>
                 <scope>provided</scope>
             </dependency>
-
             <dependency>
               <groupId>me.lucko</groupId>
               <artifactId>commodore</artifactId>
@@ -367,6 +360,18 @@
                 You won't need most of these dependencies installed.
                 Most are used in closed source MassiveCraft plugins.
             -->
+
+            <!--
+                Page: https://www.spigotmc.org/resources/dynmap.274/
+                Intall: mvn install:install-file -DgroupId=us.dynmap -DartifactId=dynmap -Dversion=3.0-SNAPSHOT -Dpackaging=jar -Dfile=dynmap.jar
+                Test: mvn dependency:get -Dartifact=us.dynmap:dynmap:3.0-SNAPSHOT
+            -->
+            <dependency>
+              <groupId>us.dynmap</groupId>
+              <artifactId>dynmap</artifactId>
+              <version>${massiveDynmapVersion}</version>
+              <scope>provided</scope>
+            </dependency>
 
             <!--
                 Page: https://www.spigotmc.org/resources/lwc-unofficial-entity-locking.2162/history
