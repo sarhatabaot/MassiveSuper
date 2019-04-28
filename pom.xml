@@ -4,7 +4,7 @@
     <!-- Basics -->
     <groupId>com.massivecraft.massivesuper</groupId>
     <artifactId>MassiveSuper</artifactId>
-    <version>3.1.5</version>
+    <version>3.2.0-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <!-- Info -->
@@ -47,8 +47,8 @@
         <massiveHttpclientVersion>4.5.3</massiveHttpclientVersion>
 
         <!-- https://hub.spigotmc.org/nexus/content/groups/public/org/spigotmc/spigot-api/ -->
-        <massiveSpigotVersion>1.13.2-R0.1-SNAPSHOT</massiveSpigotVersion>
-        <massivePaperVersion>1.13.2-R0.1-SNAPSHOT</massivePaperVersion>
+        <massiveSpigotVersion>1.14-pre5-SNAPSHOT</massiveSpigotVersion>
+        <massivePaperVersion>1.14-pre5-SNAPSHOT</massivePaperVersion>
 
         <!-- http://nexus.hc.to/content/repositories/pub_releases/net/milkbowl/vault/Vault/ -->
         <massiveVaultVersion>1.5.6</massiveVaultVersion>
@@ -130,11 +130,11 @@
             <id>howaner-repo</id>
             <url>http://repo.howaner.de/</url>
         </repository>
-        <!-- Commodore/Brigadier -->
+        <!-- Commodore/Brigadier
         <repository>
           <id>luck-repo</id>
           <url>https://repo.lucko.me/</url>
-        </repository>
+        </repository>-->
         <!-- PlaceholderAPI -->
         <repository>
             <id>placeholderapi</id>
@@ -292,18 +292,18 @@
                 <version>${massiveVaultVersion}</version>
                 <scope>provided</scope>
             </dependency>
-            <dependency>
+            <!--<dependency>
               <groupId>me.lucko</groupId>
               <artifactId>commodore</artifactId>
               <version>${massiveCommodoreVersion}</version>
               <scope>provided</scope>
-            </dependency>
+            </dependency>-->
 
             <!--
                 Page: https://dev.bukkit.org/projects/worldedit/files
                 File: https://dev.bukkit.org/projects/worldedit/files/956525
-                Intall: mvn install:install-file -DgroupId=com.sk89q.worldedit -DartifactId=worldedit-bukkit -Dversion=6.1.5-TEMPFIX -Dpackaging=jar -Dfile=worldedit-bukkit-6.1.5.jar
-                Test: mvn dependency:get -Dartifact=com.sk89q.worldedit:worldedit-bukkit:6.1.5-TEMPFIX
+                Intall: mvn install:install-file -DgroupId=com.sk89q.worldedit -DartifactId=worldedit-bukkit -Dversion=7.0.0-SNAPSHOT -Dpackaging=jar -Dfile=worldedit-bukkit-6.1.5.jar
+                Test: mvn dependency:get -Dartifact=com.sk89q.worldedit:worldedit-bukkit:7.0.0-SNAPSHOT
             -->
             <dependency>
                 <groupId>com.sk89q.worldedit</groupId>
@@ -376,8 +376,8 @@
             <!--
                 Page: https://www.spigotmc.org/resources/lwc-unofficial-entity-locking.2162/history
                 File: https://www.spigotmc.org/resources/lwc-unofficial-entity-locking.2162/download?version=131362
-                Intall: mvn install:install-file -DgroupId=com.griefcraft -DartifactId=lwc -Dversion=1.8.2 -Dpackaging=jar -Dfile=EntityLWC.jar
-                Test: mvn dependency:get -Dartifact=com.griefcraft:lwc:1.8.2
+                Intall: mvn install:install-file -DgroupId=com.griefcraft -DartifactId=lwc -Dversion=2.1.1 -Dpackaging=jar -Dfile=EntityLWC.jar
+                Test: mvn dependency:get -Dartifact=com.griefcraft:lwc:2.1.1
             -->
             <dependency>
                 <groupId>com.griefcraft</groupId>
