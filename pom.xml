@@ -39,9 +39,9 @@
         <!-- ~~~~~~~~~~~~~~~~~ -->
         <!-- External Versions -->
         <!-- ~~~~~~~~~~~~~~~~~ -->
-        <massiveGuavaVersion>23.5-jre</massiveGuavaVersion>
-        <massiveGsonVersion>2.8.2</massiveGsonVersion>
-        <massiveMongoDBVersion>2.12.3</massiveMongoDBVersion>
+        <!-- included in spigot <massiveGuavaVersion>23.5-jre</massiveGuavaVersion>
+        <massiveGsonVersion>2.8.2</massiveGsonVersion>-->
+        <massiveMongoDBVersion>3.11.0</massiveMongoDBVersion>
 
         <massiveJavassistVersion>3.21.0-GA</massiveJavassistVersion>
         <massiveHttpclientVersion>4.5.3</massiveHttpclientVersion>
