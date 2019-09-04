@@ -33,7 +33,7 @@
         <massiveMavenCompilerPluginVersion>3.8.0</massiveMavenCompilerPluginVersion>
         <massiveMavenJarPluginVersion>3.1.1</massiveMavenJarPluginVersion>
         <massiveMavenShadePluginVersion>3.2.1</massiveMavenShadePluginVersion>
-        <massiveMavenProGuardPluginVersion>2.0.14</massiveMavenProGuardPluginVersion>
+        <massiveMavenProGuardPluginVersion>2.1.1</massiveMavenProGuardPluginVersion>
         <massiveMavenProGuardVersion>5.3.3</massiveMavenProGuardVersion>
 
         <!-- ~~~~~~~~~~~~~~~~~ -->
@@ -47,11 +47,11 @@
         <massiveHttpclientVersion>4.5.3</massiveHttpclientVersion>
 
         <!-- https://hub.spigotmc.org/nexus/content/groups/public/org/spigotmc/spigot-api/ -->
-        <massiveSpigotVersion>1.14-pre5-SNAPSHOT</massiveSpigotVersion>
-        <massivePaperVersion>1.14-pre5-SNAPSHOT</massivePaperVersion>
+        <massiveSpigotVersion>1.14.4-R0.1-SNAPSHOT</massiveSpigotVersion>
+        <massivePaperVersion>1.14.4-R0.1-SNAPSHOT</massivePaperVersion>
 
         <!-- http://nexus.hc.to/content/repositories/pub_releases/net/milkbowl/vault/Vault/ -->
-        <massiveVaultVersion>1.5.6</massiveVaultVersion>
+        <massiveVaultVersion>1.7</massiveVaultVersion>
 
         <!-- https://github.com/lucko/commodore -->
         <massiveCommodoreVersion>1.2</massiveCommodoreVersion>
@@ -102,19 +102,15 @@
         </repository>
         <!-- Paper API -->
         <repository>
-            <id>destroystokyo-repo</id>
-            <url>https://repo.destroystokyo.com/repository/maven-snapshots/</url>
+            <id>papermc</id>
+            <url>https://papermc.io/repo/repository/maven-public/</url>
         </repository>
         <!-- Dynmap -->
         <repository>
             <id>dynmap-repo</id>
             <url>http://repo.mikeprimm.com/</url>
         </repository>
-        <!-- Vault
-        <repository>
-            <id>vault-repo</id>
-            <url>http://nexus.hc.to/content/repositories/pub_releases</url>
-        </repository>-->
+
         <!-- WorldEdit and WorldGuard -->
         <repository>
             <id>sk89q-repo</id>
@@ -140,6 +136,11 @@
             <id>placeholderapi</id>
             <url>http://repo.extendedclip.com/content/repositories/placeholderapi/</url>
         </repository>
+        <!-- Vault -->
+        <repository>
+            <id>jitpack.io</id>
+            <url>https://jitpack.io</url>
+        </repository>
     </repositories>
 
     <!-- Build -->
@@ -147,7 +148,13 @@
         <!-- Basics -->
         <defaultGoal>clean install</defaultGoal>
         <finalName>${project.artifactId}</finalName>
-        <sourceDirectory>${project.basedir}/src</sourceDirectory>
+        <sourceDirectory>${project.basedir}/src/main/java</sourceDirectory>
+        <resources>
+            <resource>
+                <directory>${project.basedir}/src/main/resources</directory>
+                <filtering>true</filtering>
+            </resource>
+        </resources>
 
         <!-- Plugins -->
         <plugins>
@@ -249,6 +256,7 @@
     <dependencyManagement>
         <dependencies>
             <!-- External - Properly published Maven projects. Not made by MassiveCraft. -->
+            <!-- Shaded in with spigot
             <dependency>
                 <groupId>com.google.guava</groupId>
                 <artifactId>guava</artifactId>
@@ -259,6 +267,7 @@
                 <artifactId>gson</artifactId>
                 <version>${massiveGsonVersion}</version>
             </dependency>
+            -->
             <dependency>
                 <groupId>org.mongodb</groupId>
                 <artifactId>mongo-java-driver</artifactId>
@@ -287,8 +296,8 @@
                 <scope>provided</scope>
             </dependency>
             <dependency>
-                <groupId>net.milkbowl.vault</groupId>
-                <artifactId>Vault</artifactId>
+                <groupId>com.github.MilkBowl</groupId>
+                <artifactId>VaultAPI</artifactId>
                 <version>${massiveVaultVersion}</version>
                 <scope>provided</scope>
             </dependency>
@@ -344,10 +353,10 @@
             </dependency>
 
             <dependency>
-              <groupId>me.clip</groupId>
-              <artifactId>placeholderapi</artifactId>
-              <version>${massivePlaceholderAPIVersion}</version>
-              <scope>provided</scope>
+                <groupId>me.clip</groupId>
+                <artifactId>placeholderapi</artifactId>
+                <version>${massivePlaceholderAPIVersion}</version>
+                <scope>provided</scope>
             </dependency>
 
             <!-- Custom - Custom artifacts. Manually installed by command. -->
@@ -367,10 +376,10 @@
                 Test: mvn dependency:get -Dartifact=us.dynmap:dynmap:3.0-SNAPSHOT
             -->
             <dependency>
-              <groupId>us.dynmap</groupId>
-              <artifactId>dynmap</artifactId>
-              <version>${massiveDynmapVersion}</version>
-              <scope>provided</scope>
+                <groupId>us.dynmap</groupId>
+                <artifactId>dynmap</artifactId>
+                <version>${massiveDynmapVersion}</version>
+                <scope>provided</scope>
             </dependency>
 
             <!--
