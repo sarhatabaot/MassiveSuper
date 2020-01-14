@@ -89,8 +89,8 @@
         <!-- https://www.spigotmc.org/resources/lwc-unofficial-entity-locking.2162/ -->
         <massiveLwcVersion>2.1.1</massiveLwcVersion>
 
-        <!-- https://www.spigotmc.org/wiki/hooking-into-placeholderapi/ -->
-        <massivePlaceholderAPIVersion>2.9.2</massivePlaceholderAPIVersion>
+        <!-- https://github.com/PlaceholderAPI/PlaceholderAPI/wiki/Hook-into-PlaceholderAPI -->
+        <massivePlaceholderAPIVersion>2.10.4</massivePlaceholderAPIVersion>
     </properties>
 
     <!-- Repositories -->
