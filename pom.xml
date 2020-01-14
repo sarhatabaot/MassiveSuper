@@ -47,8 +47,8 @@
         <massiveHttpclientVersion>4.5.3</massiveHttpclientVersion>
 
         <!-- https://hub.spigotmc.org/nexus/content/groups/public/org/spigotmc/spigot-api/ -->
-        <massiveSpigotVersion>1.14-pre5-SNAPSHOT</massiveSpigotVersion>
-        <massivePaperVersion>1.14-pre5-SNAPSHOT</massivePaperVersion>
+        <massiveSpigotVersion>1.15.1-R0.1-SNAPSHOT</massiveSpigotVersion>
+        <massivePaperVersion>1.15.1-R0.1-SNAPSHOT</massivePaperVersion>
 
         <!-- http://nexus.hc.to/content/repositories/pub_releases/net/milkbowl/vault/Vault/ -->
         <massiveVaultVersion>1.5.6</massiveVaultVersion>
