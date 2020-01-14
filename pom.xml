@@ -59,10 +59,10 @@
         <!-- http://maven.sk89q.com/repo/com/sk89q/worldedit/worldedit-bukkit/ -->
         <!-- The artifact in their repository was not properly shaded -->
         <!-- The solution for now is to download and install manually -->
-        <massiveWorldEditVersion>7.0.0-SNAPSHOT</massiveWorldEditVersion>
+        <massiveWorldEditVersion>7.0.1</massiveWorldEditVersion>
 
         <!-- http://maven.sk89q.com/repo/com/sk89q/worldguard/worldguard-legacy/ -->
-        <massiveWorldGuardVersion>7.0.0-SNAPSHOT</massiveWorldGuardVersion>
+        <massiveWorldGuardVersion>7.0.2</massiveWorldGuardVersion>
 
         <!-- http://repo.dmulloy2.net/content/repositories/public/com/comphenix/protocol/ProtocolLib/ -->
         <massiveProtocolLibVersion>4.3.0</massiveProtocolLibVersion>
@@ -105,16 +105,11 @@
             <id>destroystokyo-repo</id>
             <url>https://repo.destroystokyo.com/repository/maven-snapshots/</url>
         </repository>
-        <!-- Dynmap -->
-        <repository>
-            <id>dynmap-repo</id>
-            <url>http://repo.mikeprimm.com/</url>
-        </repository>
-        <!-- Vault
+        <!-- Vault-->
         <repository>
             <id>vault-repo</id>
             <url>http://nexus.hc.to/content/repositories/pub_releases</url>
-        </repository>-->
+        </repository>
         <!-- WorldEdit and WorldGuard -->
         <repository>
             <id>sk89q-repo</id>
@@ -301,9 +296,8 @@
 
             <!--
                 Page: https://dev.bukkit.org/projects/worldedit/files
-                File: https://dev.bukkit.org/projects/worldedit/files/956525
-                Intall: mvn install:install-file -DgroupId=com.sk89q.worldedit -DartifactId=worldedit-bukkit -Dversion=7.0.0-SNAPSHOT -Dpackaging=jar -Dfile=worldedit-bukkit-6.1.5.jar
-                Test: mvn dependency:get -Dartifact=com.sk89q.worldedit:worldedit-bukkit:7.0.0-SNAPSHOT
+                Intall: mvn install:install-file -DgroupId=com.sk89q.worldedit -DartifactId=worldedit-bukkit -Dversion=7.0.1 -Dpackaging=jar -Dfile=worldedit-bukkit-7.0.1.jar
+                Test: mvn dependency:get -Dartifact=com.sk89q.worldedit:worldedit-bukkit:7.0.1
             -->
             <dependency>
                 <groupId>com.sk89q.worldedit</groupId>
@@ -311,13 +305,18 @@
                 <version>${massiveWorldEditVersion}</version>
                 <scope>provided</scope>
             </dependency>
+
             <dependency>
                 <groupId>com.sk89q.worldedit</groupId>
                 <artifactId>worldedit-bukkit</artifactId>
                 <version>${massiveWorldEditVersion}</version>
                 <scope>provided</scope>
             </dependency>
-
+            <!--
+                Page: https://dev.bukkit.org/projects/worldguard/files
+                Intall: mvn install:install-file -DgroupId=com.sk89q.worldguard -DartifactId=worldguard-core -Dversion=7.0.2 -Dpackaging=jar -Dfile=worldguard-bukkit-7.0.2.jar
+                Test: mvn dependency:get -Dartifact=com.sk89q.worldguard:worldguard-core:7.0.2
+            -->
             <dependency>
                 <groupId>com.sk89q.worldguard</groupId>
                 <artifactId>worldguard-core</artifactId>
