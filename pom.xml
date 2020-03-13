@@ -4,7 +4,7 @@
     <!-- Basics -->
     <groupId>com.massivecraft.massivesuper</groupId>
     <artifactId>MassiveSuper</artifactId>
-    <version>3.2.5</version>
+    <version>3.3.0</version>
     <packaging>pom</packaging>
 
     <!-- Info -->
@@ -47,8 +47,8 @@
         <massiveHttpclientVersion>4.5.3</massiveHttpclientVersion>
 
         <!-- https://hub.spigotmc.org/nexus/content/groups/public/org/spigotmc/spigot-api/ -->
-        <massiveSpigotVersion>1.14.4-R0.1-SNAPSHOT</massiveSpigotVersion>
-        <massivePaperVersion>1.14.4-R0.1-SNAPSHOT</massivePaperVersion>
+        <massiveSpigotVersion>1.15.1-R0.1-SNAPSHOT</massiveSpigotVersion>
+        <massivePaperVersion>1.15.1-R0.1-SNAPSHOT</massivePaperVersion>
 
         <!-- http://nexus.hc.to/content/repositories/pub_releases/net/milkbowl/vault/Vault/ -->
         <massiveVaultVersion>1.7</massiveVaultVersion>
@@ -59,10 +59,10 @@
         <!-- http://maven.sk89q.com/repo/com/sk89q/worldedit/worldedit-bukkit/ -->
         <!-- The artifact in their repository was not properly shaded -->
         <!-- The solution for now is to download and install manually -->
-        <massiveWorldEditVersion>7.0.0-SNAPSHOT</massiveWorldEditVersion>
+        <massiveWorldEditVersion>7.0.1</massiveWorldEditVersion>
 
         <!-- http://maven.sk89q.com/repo/com/sk89q/worldguard/worldguard-legacy/ -->
-        <massiveWorldGuardVersion>7.0.0-SNAPSHOT</massiveWorldGuardVersion>
+        <massiveWorldGuardVersion>7.0.2</massiveWorldGuardVersion>
 
         <!-- http://repo.dmulloy2.net/content/repositories/public/com/comphenix/protocol/ProtocolLib/ -->
         <massiveProtocolLibVersion>4.3.0</massiveProtocolLibVersion>
@@ -89,8 +89,8 @@
         <!-- https://www.spigotmc.org/resources/lwc-unofficial-entity-locking.2162/ -->
         <massiveLwcVersion>2.1.1</massiveLwcVersion>
 
-        <!-- https://www.spigotmc.org/wiki/hooking-into-placeholderapi/ -->
-        <massivePlaceholderAPIVersion>2.9.2</massivePlaceholderAPIVersion>
+        <!-- https://github.com/PlaceholderAPI/PlaceholderAPI/wiki/Hook-into-PlaceholderAPI -->
+        <massivePlaceholderAPIVersion>2.10.4</massivePlaceholderAPIVersion>
     </properties>
 
     <!-- Repositories -->
@@ -111,6 +111,11 @@
             <url>http://repo.mikeprimm.com/</url>
         </repository>
 
+        <!-- Vault-->
+        <repository>
+            <id>vault-repo</id>
+            <url>http://nexus.hc.to/content/repositories/pub_releases</url>
+        </repository>
         <!-- WorldEdit and WorldGuard -->
         <repository>
             <id>sk89q-repo</id>
@@ -310,9 +315,8 @@
 
             <!--
                 Page: https://dev.bukkit.org/projects/worldedit/files
-                File: https://dev.bukkit.org/projects/worldedit/files/956525
-                Intall: mvn install:install-file -DgroupId=com.sk89q.worldedit -DartifactId=worldedit-bukkit -Dversion=7.0.0-SNAPSHOT -Dpackaging=jar -Dfile=worldedit-bukkit-6.1.5.jar
-                Test: mvn dependency:get -Dartifact=com.sk89q.worldedit:worldedit-bukkit:7.0.0-SNAPSHOT
+                Intall: mvn install:install-file -DgroupId=com.sk89q.worldedit -DartifactId=worldedit-bukkit -Dversion=7.0.1 -Dpackaging=jar -Dfile=worldedit-bukkit-7.0.1.jar
+                Test: mvn dependency:get -Dartifact=com.sk89q.worldedit:worldedit-bukkit:7.0.1
             -->
             <dependency>
                 <groupId>com.sk89q.worldedit</groupId>
@@ -320,13 +324,18 @@
                 <version>${massiveWorldEditVersion}</version>
                 <scope>provided</scope>
             </dependency>
+
             <dependency>
                 <groupId>com.sk89q.worldedit</groupId>
                 <artifactId>worldedit-bukkit</artifactId>
                 <version>${massiveWorldEditVersion}</version>
                 <scope>provided</scope>
             </dependency>
-
+            <!--
+                Page: https://dev.bukkit.org/projects/worldguard/files
+                Intall: mvn install:install-file -DgroupId=com.sk89q.worldguard -DartifactId=worldguard-core -Dversion=7.0.2 -Dpackaging=jar -Dfile=worldguard-bukkit-7.0.2.jar
+                Test: mvn dependency:get -Dartifact=com.sk89q.worldguard:worldguard-core:7.0.2
+            -->
             <dependency>
                 <groupId>com.sk89q.worldguard</groupId>
                 <artifactId>worldguard-core</artifactId>
